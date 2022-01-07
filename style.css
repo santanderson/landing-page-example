@@ -1,0 +1,36 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body{
+    background-image: url(beagle-wearing-birthday-hat-in-the-color-of-the-year-2022.jpg);
+    background-size: 90em; font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: rgb(141, 175, 197);
+    text-align: center;
+    box-shadow: 2px 3px 5px rgb(37, 106, 151);
+}
+nav div{
+    padding: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/*Conteúdo*/
+
+main.cta{
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: 500px;
+    margin: 20px auto;
+    margin-right: 20px;
+    
+}
+
+.cta button{
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
