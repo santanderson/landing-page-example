@@ -1,20 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 *{padding: 0; margin: 0; box-sizing: border-box;}
 
 body{
-    background-image: url(beagle-wearing-birthday-hat-in-the-color-of-the-year-2022.jpg);
-    background-size: 90em; font-family: Arial, Helvetica, sans-serif;
+    background-image: url(17280.png);
+    background-size: 100%; font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
-    background-color: rgb(0, 43, 100);
+    background-color: rgb(0, 67, 105);
     color: white;
     text-align: center;
-    box-shadow: 2px 2px 5px rgb(90, 90, 90);
+    box-shadow: 2px 2px 2px rgb(47, 47, 47);
 }
-nav h1.logo{
+.logo{
     padding: 15px;
     font-size: 27px;
     font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
 }
 
 /*Conteúdo*/
@@ -25,14 +29,25 @@ main.cta{
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
-    width: 85%; height: 500px;
-    margin: 20px auto;
+    width: 85%;
+    height: 450px;
+    margin: 20px auto 40px;
     border-radius: 15px;
     box-shadow: 2px 4px 4px rgb(90, 90, 90);
     padding: 30px;
 }
+.copy{text-align: center;}
 
-.cta button{
+.cta .copy h1{
+    color: rgb(207, 83, 0);
+    margin-bottom: 30px;
+}
+.cta .copy p{
+    color: rgb(0, 102, 161);
+    
+}
+
+main.cta button{
     padding: 20px;
     border-radius: 10px;
     border: none;
@@ -45,7 +60,7 @@ main.cta{
 
 /*rodapé*/
 .rodape{
-    background-color: rgb(193, 193, 255);
+    background-image: linear-gradient(to right, rgb(95, 95, 255), rgb(193, 193, 255));
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -58,18 +73,25 @@ main.cta{
     display: block;
 }
 /*breakpoints*/
+@media(min-width:620px){
+    main.cta{
+        width: 527px;
+        height: 430px;
+        padding: 0px 30px;
+        font-size: 18px;
+    }
+}
+@media(min-width: 1120px) {
 
-@media(min-width: 1050px) {
+    body{background-image: url(beagle-wearing-birthday-hat-in-the-color-of-the-year-2022.jpg);}
 
-nav h1.logo{font-size: 35px;}
-
-    /*Conteúdo*/
+.logo{font-size: 35px;}
 
 main.cta{
-    width: 450px;
+    width: 425px;
+    height: 480px;
     margin: 25px 65px 25px auto;
     border-radius: 20px;
-    font-size: 18px;
 }
 
 .cta button{
